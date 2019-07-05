@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Data Visulization using Python| Plots</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">   
+    
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">   
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">     
+
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">    
+
+   
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  </head>
+  <body>
+ 
+  <!-- Pre Loader -->
+  <div id="aa-preloader-area">
+    <div class="pulse"></div>
+  </div>
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+  <!-- Start header section -->
+  <header id="aa-header">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-header-area">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-left">
+                  <div class="aa-telephone-no">
+                    <span class="fa fa-phone"></span>
+                    91-22-66449191
+                  </div>
+                  <div class="aa-email hidden-xs">
+                    <span class="fa fa-envelope-o"></span> K.J. Somaiya College of Engineering
+                  </div>
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header section -->
+  <!-- Start menu section -->
+  <section id="aa-menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+          <!-- Text based logo -->
+          <a class="navbar-brand aa-logo" href="index.html"> BreastCancer <span>Diagnostic</span></a>
+          <!-- Image based logo -->
+          <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->                   
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
+            <li><a href="visualization.html">HOME</a></li>                                                 
+            <li><a href="classify.html">Classification</a></li>          
+          </ul>                          
+        </div><!--/.nav-collapse -->       
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+
+  <!-- Start Proerty header  -->
+
+  <section id="aa-property-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-property-header-inner">
+            <h2>DATA VISUALIZATION</h2>
+            <ol class="breadcrumb">
+            <li><a href="#">HOME</a></li>            
+            <li class="active">Data Visualization</li>
+          </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- End Proerty header  -->
+
+  <section id="aa-gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-gallery-area">
+            <div class="aa-title">
+              <h2>Data Visualization</h2>
+              <span></span>
+               <p>Data visualization is viewed by many disciplines as a modern equivalent of visual communication. It involves the creation and study of the visual representation of data. To communicate information clearly and efficiently, data visualization uses statistical graphics, plots, information graphics and other tools.
+			   Here, we have used violin plots, swarm plots, box plots</p>
+            </div>
+            <!-- Start gallery -->
+            <div class="aa-gallery-content">
+              <div class="aa-gallery-top">
+                <!-- Start gallery menu -->
+                <ul>
+                  <li data-filter="all" class="filter active">All</li>
+                  <li data-filter=".violinplot" class="filter">Violin Plot</li>
+                  <li data-filter=".swarmplot" class="filter">Swarm Plot</li>
+                  <li data-filter=".boxplot" class="filter">Boxplot</li>
+                  <li data-filter=".compare" class="filter">Comparing Attributes</li>
+				  <li data-filter=".heatmap" class="filter">HEATMAP</li>
+                  <li data-filter=".dataset" class="filter">Dataset</li>
+                </ul>
+              </div>
+			  <div class="aa-title">
+			  <p><b><u>Click on the plot to zoom.</u></b></p>
+			  </div>
+              <!-- Start gallery image -->
+              <div id="mixit-container" class="aa-gallery-body">
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix violinplot">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/1.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/1.png"><span class="fa fa-eye">
+                      
+                    </div>                  
+                  </div>
+                </div>
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix violinplot">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/2.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/2.png"><span class="fa fa-eye"></span></a>
+                      
+                    </div>                  
+
+                  </div>
+                </div>
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix violinplot">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/3.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/3.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix swarmplot">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/4.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/4.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix swarmplot">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/5.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/5.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix swarmplot">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/6.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/6.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix boxplot">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/8.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/8.png"><span class="fa fa-eye"></span></a>
+                      
+                    </div>                  
+
+                  </div>
+                </div>
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix boxplot">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/9.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/9.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix boxplot">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/10.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/10.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+				
+				<div class="aa-single-gallery mix heatmap">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/13.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/13.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+				
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix compare">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/11.png" alt="img" height=20 width=20></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/11.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- start single gallery image -->
+                <div class="aa-single-gallery mix compare">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/12.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/12.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+				
+				<div class="aa-single-gallery mix dataset">                  
+                  <div class="aa-single-gallery-item">
+                    <div class="aa-single-gallery-img">
+                      <a href="#"><img src="img/gallery/small/7.png" alt="img"></a>
+                    </div>
+                    <div class="aa-single-gallery-info">
+                      <a class="fancybox" data-fancybox-group="gallery" href="img/gallery/big/7.png"><span class="fa fa-eye">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="aa-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="aa-footer-area">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="aa-footer-left">
+               <p>K.J. Somaiya College of Engineering </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="aa-footer-middle">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="aa-footer-right">
+                <a href="visualization.html">Home</a>
+                <a href="classify.html">Classification</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / Footer -->
+
+  <!-- jQuery library -->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="js/jquery.min.js"></script>   
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>   
+  <!-- slick slider -->
+  <script type="text/javascript" src="js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+   <!-- mixit slider -->
+  <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script> 
+  
+  </body>
+</html>
