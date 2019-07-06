@@ -1,0 +1,13 @@
+<web-app>  
+  
+<servlet>  
+<servlet-name>Bayes</servlet-name>  
+<servlet-class>Bayes</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>Bayes</servlet-name>  
+<url-pattern>/Bayes</url-pattern>  
+</servlet-mapping>  
+  
+</web-app>  
